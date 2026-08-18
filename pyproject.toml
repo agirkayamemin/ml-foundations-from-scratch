@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-foundations-from-scratch"
+version = "0.1.0"
+description = "Fundamental machine learning algorithms implemented from scratch with NumPy."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "numpy>=2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "matplotlib>=3.9",
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.9",
+    "scikit-learn>=1.6",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
