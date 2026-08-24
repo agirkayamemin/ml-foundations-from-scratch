@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ml-foundations-from-scratch"
-version = "0.1.0"
+version = "1.0.0"
 description = "Fundamental machine learning algorithms implemented from scratch with NumPy."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -12,6 +12,9 @@ license = "MIT"
 dependencies = [
     "numpy>=2.1",
 ]
+
+[project.scripts]
+ml-foundations = "ml_foundations.__main__:main"
 
 [project.optional-dependencies]
 dev = [
@@ -24,6 +27,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "--strict-markers"
 
 [tool.ruff]
 line-length = 88
