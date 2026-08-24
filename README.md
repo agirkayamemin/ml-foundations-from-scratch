@@ -36,6 +36,9 @@ underscore.
 See [Mathematical Notes](docs/mathematical-foundations.md) for formulas and
 implementation connections.
 
+The verified v1.0.0 outcome is summarized in the
+[delivery report](docs/delivery-report.md).
+
 ## Installation
 
 Python 3.11 or newer is required. The commands below target Git Bash on Windows.
